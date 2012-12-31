@@ -119,6 +119,9 @@ text-align: center;
 	font-size: 0.8em;
 	font-weight: bold;
 }
+#chart1{
+	float: left;
+}
 #mainvis div.desc {
     padding: 0.8em;
 	font-weight: normal;
@@ -132,25 +135,29 @@ text-align: center;
 	margin-bottom: 0.1em;
 }
 
-#mainvis-description {
+#mainvis-description,
+#chart1-description {
 	margin-left: 10px;
 	float: left;
 	border: 1px solid #e0e0e0;
 	background-color: #fff;
 }
 
-#mainvis-description .content-fill{
+#mainvis-description .content-fill,
+#chart1-description .content-fill{
 	padding: 10px;
 }
 
-#mainvis-description .content-fill .title{
+#mainvis-description .content-fill .title,
+#chart1-description .content-fill .title{
 	font-size: 11pt;
 	font-weight:bolder;
 	color: #900;
 	margin-bottom: 5px;
 }
 
-#mainvis-description .content-fill .text{
+#mainvis-description .content-fill .text,
+#chart1-description .content-fill .text{
 	color: #999;
 }
 
@@ -265,8 +272,8 @@ div.cc{
 	margin-top: -48px;
 	margin-left: 570px;
 }
-.page-header img.pofomd{
-	margin-left: 10px;	
+.page-header img.rnsp{
+	margin-left: 220px;
 }
 
 table.credores thead th{

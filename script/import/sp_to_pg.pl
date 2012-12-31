@@ -88,7 +88,9 @@ $csv->bind_columns(
     \$VALOR_PAGO,                \$VALOR_PAGO_DE_ANOS_ANTERIORES
 );
 
-open my $fh, $ARGV[1] or die 'error';
+# <:encoding(iso-8859-1)
+
+open my $fh, '<:encoding(iso-8859-1)', $ARGV[1] or die 'error';
 
 my $line = 0;
 my $cache_inserting = {};
@@ -159,7 +161,7 @@ while ( my $row = $csv->getline($fh) ) {
                     numero_processo => &remover_acentos($NUMERO_PROCESSO),
                     numero_nota_empenho =>
                       &remover_acentos($NUMERO_NOTA_DE_EMPENHO),
-                    tipo_licitacao  => &remover_acentos($TIPO_LICITACAO),
+                    tipo_licitacao  => &remover_acentos($TIPO_LICITACAO) || 'nao-informado',
                     valor_empenhado => $VALOR_EMPENHADO,
                     valor_liquidado => $VALOR_LIQUIDADO,
                     valor_pago_anos_anteriores =>
@@ -177,11 +179,7 @@ while ( my $row = $csv->getline($fh) ) {
         }
     );
 
-    #print "funcao, $NOME_FUNCAO\n";
-    #print "subfuncao, $NOME_SUBFUNCAO\n";
-    #print "programa, $NOME_PROGRAMA\n";
-    #print "acao, $NOME_ACAO\n";
-    #print "credor, $NOME_CREDOR\n\n";
+    print "$line\n";
 
 }
 
@@ -210,7 +208,7 @@ sub cache_or_create {
         $id = $cache_inserting->{$campo}{$codigo};
 
     }else{
-        my $obj = $schema->resultset($set)->create($info);
+        my $obj = $schema->resultset($set)->find_or_create($info);
 
         $cache_inserting->{$campo}{$codigo} = $id = $obj->id;
     };

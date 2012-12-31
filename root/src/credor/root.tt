@@ -14,8 +14,8 @@
 <table class='credores'>
 	<thead>
 		<tr>
-			<th>Dataset:</th>
-			<th>Função:</th>
+			<th>Dataset</th>
+			<th>Função</th>
 			<th>Sub-função:</th>
 			<th>Programa</th>
 			<th>Ação</th>
@@ -37,7 +37,7 @@
 [% END %]
 	<tfooter>
 		<tr>
-			<td class='total' colspan='4' align='right'><b>TOTAL</b></td>
+			<td class='total' colspan='5' align='right'><b>TOTAL</b></td>
 			<td class='data'>[% credor.total %]</td>
 		</tr>
 	</tfooter>

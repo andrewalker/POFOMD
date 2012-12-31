@@ -29,6 +29,9 @@ sub list : Chained('/base') : PathPart('datasets') : Args(0) {
         # TODO : Adicionar tipo de base no dataset.
         my $type = $item->uri;
         $type =~ s/\-.*//g;
+	$type = 'estado2' if $item->uri =~ 'rio';
+
+	my $count =  $gasto->search({ dataset_id => $item->id })->count;
 
         push(
             @dts,
@@ -36,15 +39,18 @@ sub list : Chained('/base') : PathPart('datasets') : Args(0) {
                 dataset_id => $item->id,
                 periodo => $item->periodo->ano,
                 valor => $obj->valor,
-                total => formata_valor($obj->valor),
-                items => $gasto->search({ dataset_id => $item->id })->count,
+                total => formata_real($obj->valor),
+                items => $count / 100,
+		items_real => $count,
                 type => $type,
-                titulo => $item->nome
+                titulo => $item->nome,
+		uri => $item->uri
             }
         );
         $total_all += $obj->valor;
     }
 
+    $c->stash->{dataset_text} = 'Visão Geral';
     $c->stash->{data} = \@dts;
     $c->stash->{total_all} = $total_all;
     $c->forward('View::JSON');
@@ -65,6 +71,8 @@ sub year : Chained('base') PathPart('') CaptureArgs(0) {
     $c->stash->{template} = 'node.tt';
     $c->stash->{node} =
       join( '/', '', 'dataset', $c->stash->{dataset}->uri, 'data' );
+    $c->stash->{dataset_text} = join(' - ', $c->stash->{dataset}->nome, $c->stash->{dataset}->periodo->ano);
+
 }
 
 sub root : Chained('year') PathPart('') Args(0) {}

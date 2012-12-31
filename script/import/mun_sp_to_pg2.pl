@@ -106,7 +106,7 @@ my $line = 0;
 while ( my $row = $csv->getline($fh) ) {
     $line++;
     next if $line==1 or !$Liquidado;
-    next if $Exercicio;
+    next unless $Exercicio;
     warn $Liquidado;
     $Liquidado =~ s/\,//g;
     $Liquidado =~ s/\ //g;

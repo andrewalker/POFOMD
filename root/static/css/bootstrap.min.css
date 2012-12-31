@@ -27,6 +27,11 @@ body{background-color:#ffffff;margin:0;font-family:"Helvetica Neue",Helvetica,Ar
 .container-fluid:after{clear:both;}
 .container-fluid>.sidebar{position:absolute;top:0;left:20px;width:220px;}
 .container-fluid>.content{margin-left:240px;}
+.container-fluid .busca{margin-left:300px;}
+.container-fluid .busca a{display: inline-block; padding: 0; padding-top: 2px;}
+.container-fluid .busca img{border: none; float: left; margin-left: 5px;}
+.container-fluid .busca input{width: 160px;}
+
 a{color:#a92c2c;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#7f0202;text-decoration:underline;}
 .pull-right{float:right;}
 .pull-left{float:left;}

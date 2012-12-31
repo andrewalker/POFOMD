@@ -11,6 +11,7 @@ Total de valores recebido*: [% item.total %]<br/>
 
 [% END %]
 
+[% INCLUDE pager.tt pager=credores.pager %]
 
 * Este é o total do valor recebido nas bases de dados do site onde há informações sobre quem é o credor. Não necessariamente é todo o montante que este credor recebe.
 

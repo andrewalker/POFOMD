@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Para onde foi o meu dinheiro ?</title>
+<title>[% IF dataset_text %][% dataset_text %][% END %][% IF credor.nome %][% credor.nome %][% END %] -- Para onde foi o meu dinheiro ? </title>
 <link href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+
+[% IF credor.nome %]
+<meta name="description" content="Informações relativas a despesas do governo com o [% credor.nome %], baseado em dados abertos governamentais." lang="pt-BR" />
+[% ELSE %]
+<meta name="description" content="Info-gráficos baseado em dados abertos relativos a execução do orçamento público dos governos federais, estaduais e munícipais." lang="pt-BR" />
+[% END %]
+<meta name="keywords" content="orçamento, governo, ldo, despesas, dinheiro, investimento, opensource, opendata, dados, [% credor.nome %]" />
+<meta name="robots" content="index,follow" />
+
+<meta property="og:site_name" content="[% IF dataset_text %][% dataset_text %][% END %][% IF credor.nome %][% credor.nome %][% END %] -- Para onde foi o meu dinheiro ?"/>
+<meta property="og:image" content="http://www.paraondefoiomeudinheiro.org.br/static/images/sc-pofomd.png"/>
 [% IF template.programa %]
 <script src="/static/js/rgraph/libraries/RGraph.common.core.js" ></script>
 <script src="/static/js/rgraph/libraries/RGraph.common.annotate.js" ></script>
@@ -41,11 +52,19 @@
 <script type="text/javascript" src="/static/js/jquery.jqplot.pointLabels.js"></script>
 <script type="text/javascript" src="/static/js/eficiencia.js"></script>
 [% END %]
+[% IF template.variavel %]
+<script class="include" type="text/javascript" src="/static/js/jquery.jqplot.min.js"></script>
+<script class="include" type="text/javascript" src="/static/js/plugins/jqplot.highlighter.min.js"></script>
+<script class="include" type="text/javascript" src="/static/js/plugins/jqplot.cursor.min.js"></script>
+<script class="include" type="text/javascript" src="/static/js/plugins/jqplot.canvasTextRenderer.min.js"></script>
+<script class="include" type="text/javascript" src="/static/js/plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script class="include" type="text/javascript" src="/static/js/plugins/jqplot.dateAxisRenderer.min.js"></script>
+<script calss="include" type="text/javascript" src="/static/js/plugins/jqplot.bubbleRenderer.min.js"></script>
+[% END %]
+<script src="/static/js/search.js" type="text/javascript"></script>
 <script src="/static/js/root.js" type="text/javascript"></script>
 <link rel="stylesheet" href="/static/css/bootstrap.min.css"></link>
 <link rel="stylesheet" href="/static/css/defs.css"></link>
-</head>
-<body>
 
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -58,6 +77,10 @@ _gaq.push(['_trackPageview']);
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
+
+
+</head>
+<body>
 
 
 <div class="topbar">
@@ -74,14 +97,20 @@ _gaq.push(['_trackPageview']);
 		<div class="container-fluid">
 			<ul class="nav">
 				<li><a href="/sobre">Sobre</a></li>
+				<li><a href="/datasets/overview">Datasets</a></li>
 
-				<li style="margin-left:100px" class="dropdown">
+				<li style="margin-left:50px" class="dropdown">
 					<a href="#" class="dropdown-toggle">Federal</a>
 					<ul class="dropdown-menu">
 						<li><a href="/dataset/federal-direto-2012">Gastos direto - 2012</a></li>
 						<li><a href="/dataset/federal-direto-2011">Gastos direto - 2011</a></li>
 						<li><a href="/dataset/federal-direto-2010">Gastos direto - 2010</a></li>
-
+						<li><a href="/dataset/federal-direto-2009">Gastos direto - 2009</a></li>
+						<li><a href="/dataset/federal-direto-2008">Gastos direto - 2008</a></li>
+						<li><a href="/dataset/federal-direto-2007">Gastos direto - 2007</a></li>
+						<li><a href="/dataset/federal-direto-2006">Gastos direto - 2006</a></li>
+						<li><a href="/dataset/federal-direto-2005">Gastos direto - 2005</a></li>
+						<li><a href="/dataset/federal-direto-2004">Gastos direto - 2004</a></li>
 					</ul>
 				</li>
 
@@ -89,6 +118,8 @@ _gaq.push(['_trackPageview']);
 					<a href="#" class="dropdown-toggle">Estadual</a>
                     <ul class="dropdown-menu">
                         <li><a href="/dataset/estado-sao-paulo-2012">São Paulo - 2012</a></li>
+			<li><a href="/dataset/estado-sao-paulo-2011">São Paulo - 2011</a></li>
+			<li><a href="/dataset/estado-sao-paulo-2010">São Paulo - 2010</a></li>
 					</ul>
 				</li>
 
@@ -98,6 +129,8 @@ _gaq.push(['_trackPageview']);
                         <li><a href="/dataset/municipio-sao-paulo-2011">SP - São Paulo - 2011</a></li>
 					</ul>
 				</li>
+				
+				<li class="busca"><form method='get' action='/credores/busca'><input type="text" name="q" id="busca" placeholder="Busca por credores" size="22"><a href='#'><img src="/static/images/lupa.png" alt="Busca" /></a></form></li>
 			</ul>
 		</div>
 	</div>
@@ -110,7 +143,7 @@ _gaq.push(['_trackPageview']);
 
 			<div class="row">
 				<div class="span14">
-					<img src="[% c.uri_for('/static/images/logo-rnsp.png') %]" border="0" class='rnsp' /> <img src="[% c.uri_for('/static/images/logo-pofomd.png') %]" border="0" class="pofomd" />
+					<img src="[% c.uri_for('/static/images/logo-pofomd.png') %]" border="0" class="pofomd" /> <img src="[% c.uri_for('/static/images/logo-rnsp.png') %]" border="0" class='rnsp' />
 				</div>
 
 				<div class="span2">
@@ -150,6 +183,7 @@ _gaq.push(['_trackPageview']);
 				<ul>
 					<li><a href="/sobre">Sobre</a></li>
 					<li><a href="/contato">Contato</a></li>
+					<li><a href="https://github.com/thiagorondon/POFOMD/tree/snowflake">Código fonte desta aplicação!</a></li>
 				</ul>
 			</div>
 			

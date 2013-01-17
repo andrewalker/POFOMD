@@ -175,7 +175,7 @@ _gaq.push(['_trackPageview']);
 		<div class="logo"><a href="http://www.w3c.br/" target="_blank"><img src="[% c.uri_for('/static/images/logo-w3c.png') %]" /></a></div>
 		<div class="logo"><a href="http://www.nic.br/" target="_blank"><img src="[% c.uri_for('/static/images/logo-nicbr.png') %]" /></a></div>
 		<div class="logo"><a href="http://www.cgi.br/" target="_blank"><img src="[% c.uri_for('/static/images/logo-cgibr.png') %]" /></a></div>
-		<div class="logo"><a href="http://www.okfn.org/" target="_blank"><img src="[% c.uri_for('/static/images/logo-okfn.png') %]" /></a></div>
+		<div class="logo"><a href="http://br.okfn.org/" target="_blank"><img src="[% c.uri_for('/static/images/logo-okfn.png') %]" /></a></div>
 	</div>
 	
 </div>

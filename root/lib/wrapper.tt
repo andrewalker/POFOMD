@@ -14,6 +14,13 @@
 
 <meta property="og:site_name" content="[% IF dataset_text %][% dataset_text %][% END %][% IF credor.nome %][% credor.nome %][% END %] -- Para onde foi o meu dinheiro ?"/>
 <meta property="og:image" content="http://www.paraondefoiomeudinheiro.org.br/static/images/sc-pofomd.png"/>
+
+[% IF credor.nome %]
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "77a6b73d-9b99-4571-9512-b65552355eee"});</script>
+[% END %]
+
 [% IF template.programa %]
 <script src="/static/js/rgraph/libraries/RGraph.common.core.js" ></script>
 <script src="/static/js/rgraph/libraries/RGraph.common.annotate.js" ></script>

@@ -117,7 +117,7 @@ $csv->bind_columns(
 
 # <:encoding(iso-8859-1)
 
-open my $fh, '<', $ARGV[1] or die 'error';
+open my $fh, '<:encoding(utf-8)', $ARGV[1] or die 'error';
 
 my $line = 0;
 my $cache_inserting = {};

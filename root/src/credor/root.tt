@@ -3,9 +3,7 @@
 
 <h2>[% credor.nome %]</h2>
 
-<a name="fb_share"></a> 
-<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript">
-</script>
+<p>Informações relativas ao credor, baseado em dados abertos disponibilizados por diversos governos sobre a execução orçamentária.</p>
 
 <br/><br/>
 
@@ -44,6 +42,15 @@
 </table>
 
 [% INCLUDE pager.tt pager=gastos.pager %]
+
+<span class='st_sharethis_large' displayText='ShareThis'></span>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_googleplus_large' displayText='Google +'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_pinterest_large' displayText='Pinterest'></span>
+<span class='st_email_large' displayText='Email'></span>
+
 
 </div>
 

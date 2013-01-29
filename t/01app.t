@@ -5,6 +5,6 @@ use Test::More;
 
 use Catalyst::Test 'POFOMD';
 
-ok( request('/')->is_success, 'Request should succeed' );
+ok( action_redirect('/'), 'Request should redirect' );
 
 done_testing();

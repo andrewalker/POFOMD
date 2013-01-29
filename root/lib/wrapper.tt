@@ -190,7 +190,7 @@ _gaq.push(['_trackPageview']);
 				<ul>
 					<li><a href="/sobre">Sobre</a></li>
 					<li><a href="/contato">Contato</a></li>
-					<li><a href="https://github.com/thiagorondon/POFOMD/tree/snowflake">Código fonte desta aplicação!</a></li>
+					<li><a href="http://github.com/W3CBrasil/POFOMD">Código fonte desta aplicação!</a></li>
 				</ul>
 			</div>
 			

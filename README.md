@@ -43,7 +43,8 @@ Rodando o projeto localmente para testes
 
 6.Edite o arquivo pofomd.conf, na raiz do projeto, e coloque as suas configurações corretas de conexão com o banco.
 
-7.Preparando a base de testes:
+7. Preparando a base de testes:
+
     * Faça o download do arquivo de exemplo no link https://www.fazenda.sp.gov.br/SigeoLei131/Paginas/DownloadReceitas.aspx?flag=2&ano=2012
     * Descompacte o arquivo
     * Edite o arquivo de importação script/import/sp_to_pg.pl e configure corretamente suas credenciais de banco.

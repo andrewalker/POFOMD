@@ -51,7 +51,7 @@ Rodando o projeto localmente para testes
     * Entre no diretório lib '$ cd lib'
     * execute o arquivo de migração;
 
-        $ sudo perl ..script/import/sp_to_pg.pl 2012 path/para/o/seu/arquivo.csv
+        $ sudo perl ../script/import/sp_to_pg.pl 2012 path/para/o/seu/arquivo.csv
 
 8.Rodando o servidor de teste:
 

@@ -154,8 +154,8 @@ _gaq.push(['_trackPageview']);
 				</div>
 
 				<div class="span2">
-					<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.paraondefoiomeudinheiro.com.br/year/2010" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-					<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.paraondefoimeudinheiro.org.br&amp;send=false&amp;layout=button_count&amp;width=85&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+					<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.paraondefoiomeudinheiro.org.br" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+					<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.paraondefoiomeudinheiro.org.br&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
 				</div>
 			</div>
 		</div>

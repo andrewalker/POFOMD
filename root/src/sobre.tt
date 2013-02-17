@@ -1,54 +1,85 @@
-<div class='sobre'>
-<h1>Para Onde Foi o Meu Dinheiro</h1>
 
-Sistema elaborado para demonstrar os gastos públicos, classificados por FUNÇÃO de Governo e seus detalhamentos. Esta ferramenta permite ao usuário conhecer toda a tramitação orçamentária, indicando inclusive quem recebeu o recurso empenhado. A proposta é fornecer condições de maior clareza do destino dos tributos, bem como maior “mobilidade” no manuseio das informações obtidas.<br /><br />
+<div class='sobre'>
+
+<h1>Ferramenta permite saber como governos gastam os recursos públicos</h1>
+
+<p>Com o sugestivo nome de “Para onde foi o meu dinheiro?”, aplicativo disponibilizado pela Rede Nossa São Paulo, com o apoio do W3C Brasil, ajuda cidadão monitorar a execução dos orçamentos municipal, estadual e federal.</p>
+
+<p>Em 2012, o governo do Estado de São Paulo gastou e investiu o montante de R$ 135,3 bilhões. Desse valor total, quanto foi gasto em educação, saúde, transporte e em outras funções da administração estadual? A resposta a esta pergunta, inclusive com o detalhamento das despesas em cada uma das respectivas áreas, está disponível a qualquer cidadão na página da internet "Para onde foi o meu dinheiro?".</p>
+
+<p>Disponibilizada pela Rede Nossa São Paulo, com o apoio do W3C Brasil, a ferramenta permite também ao internauta saber quais empresas ou pessoas físicas irão receber os valores a serem pagos pelo governo estadual.</p>
+
+<p>Além dos gastos e investimentos do Estado de São Paulo, a página dá acesso a informações dos orçamentos da União e do Município de São Paulo. Entretanto, como a ferramenta funciona com os dados disponibilizados pela própria administração de cada ente da federação, os números atuais sobre as execuções orçamentárias da prefeitura paulistana e do governo federal estão menos completos no site.</p>
+
+<p>A Rede Nossa São Paulo explica que o sistema desenvolvido replica as informações e os dados públicos disponibilizados pelos três níveis de governo utilizando uma nova concepção visual e de funcionalidade. O objetivo é facilitar o acompanhamento e o entendimento, por parte do cidadão, de como estão sendo aplicados os recursos originados nos impostos e nas taxas que ele paga.</p>
+
+<p>De acordo com o W3C Brasil, que participa do projeto com orientação técnica e hospeda o aplicativo, agora será possível fazer incrementos constantes de novas funcionalidades na ferramenta, mostrando toda a potencialidade do conceito de reutilização de dados abertos como vetor de inovação permanente no desenvolvimento de aplicações.</p>
+
+<p>Outra intenção do projeto é que a existência do aplicativo contribua para estimular os governos a disponibilizarem seus dados utilizando os melhores padrões de dados abertos, o que agregaria mais informações e agilidade à página “Para onde foi o meu dinheiro?”.</p>
+
+<p>Concebido inicialmente pelo programador Thiago Rondon, o aplicativo cidadão continua em desenvolvimento e terá melhoramento constante de modo colaborativo e aberto, segundo as organizações envolvidas na iniciativa.</p>
+
+<p>Todo o projeto está sendo desenvolvido em código aberto, ou seja, quem quiser poderá utilizá-lo, modificando-o e criando novos aplicativos, sem nenhum ônus.</p>
+
+<p>A Nossa São Paulo e o W3C Brasil integram a Rede pela Transparência e Participação Social – Retps.</p>
+
+<h1>Aplicativo já está disponível para celulares</h1>
+
+<p>Além do site na internet, o aplicativo gratuito já está disponível para celulares que utilizam plataforma Android. <a href="https://play.google.com/store/apps/details?id=com.cabelo.droidOpenDataBr" target="_blank">Clique aqui</a> para instalar o aplicativo.</p>
+
+<h1>Sobre a Rede Nossa São Paulo</h1>
+<p>Integrada por cerca de 700 organizações filiadas, a Rede Nossa São Paulo tem como missão mobilizar diversos segmentos da sociedade para, em parceria com instituições públicas e privadas, construir e se comprometer com uma agenda e um conjunto de metas, e articular ações visando a uma cidade de São Paulo justa e sustentável.</p>
+
+<p>Ao disponibilizar este aplicativo, a Rede Nossa São Paulo visa contribuir para ampliar a transparência dos gastos públicos e estimular o cidadão a exercer sua cidadania, acompanhando e participando das discussões sobre o orçamento, ou seja, para onde vai o dinheiro que ele paga em impostos e taxas. </p>
+
+<h1>Sobre o escritório W3C Brasil - W3C.br</h1>
+<p>Acompanhando deliberação do Comitê Gestor da Internet no Brasil (CGI.br) e os requisitos do W3C (World Wide Web Consortium), o NIC.br deu início às atividades do escritório do W3C no Brasil - o primeiro na América do Sul.</p>
+
+<p>O W3C é um consórcio internacional com a missão de conduzir a Web ao seu potencial máximo, criando padrões e diretrizes que garantam sua evolução permanente. Mais de 80 padrões foram já publicados, entre eles HTML, XML, XHTML, RDF, SPARQL e CSS, que se constituem o eixo tecnológico da web aberta e dos dados abertos.</p>
+
+<p>O W3C no Brasil vem reforçar os objetivos globais de uma Web para todos, em qualquer aparelho, baseada no conhecimento, com segurança e responsabilidade. Mais informações em <a href="http://www.w3c.br/" target="_blank">http://www.w3c.br/</a>.</p>
 
 <h1>TERMOS TÉCNICOS</h1>
 
 <h2>Função</h2>
 
-É o maior nível de agregação das diversas áreas de atuação do setor público. A função está relacionada com a missão institucional do órgão, por exemplo, cultura, educação, saúde, defesa, que guarda relação com os respectivos Ministérios. O primeiro quadro deste sistema apresenta os dados distribuídos nas respectivas funções de governo<br /><br />
+<p>É o maior nível de agregação das diversas áreas de atuação do setor público. A função está relacionada com a missão institucional do órgão, por exemplo, cultura, educação, saúde, defesa, que guarda relação com os respectivos Ministérios. O primeiro quadro deste sistema apresenta os dados distribuídos nas respectivas funções de governo.</p>
 
 <h2>Subfunção</h2>
-Representa um nível de agregação imediatamente inferior à função e deve evidenciar cada área da atuação governamental, por intermédio da agregação de determinado subconjunto de despesas e identificação da natureza básica das ações que se aglutinam em torno das funções. As subfunções podem ser combinadas com funções diferentes daquelas às quais estão relacionadas na Portaria da Secretaria do Tesouro Nacional – STN - nº 42, de 1999<br /><br />
+
+<p>Representa um nível de agregação imediatamente inferior à função e deve evidenciar cada área da atuação governamental, por intermédio da agregação de determinado subconjunto de despesas e identificação da natureza básica das ações que se aglutinam em torno das funções. As subfunções podem ser combinadas com funções diferentes daquelas às quais estão relacionadas na Portaria da Secretaria do Tesouro Nacional – STN - nº 42, de 1999.</p>
+
+<h2>Programa</h2>
+
+<p>O programa é o instrumento de organização da atuação governamental que articula um conjunto de ações que concorrem para a concretização de um objetivo comum preestabelecido, mensurado por indicadores instituídos no plano, visando à solução de um problema ou o atendimento de determinada necessidade ou demanda da sociedade. O Programa apresenta o código definido no PPA 2010 – 2013.</p>
 
 
-<h1>Programa</h1>
-O programa é o instrumento de organização da atuação governamental que articula um conjunto de ações que concorrem para a concretização de um objetivo comum preestabelecido, mensurado por indicadores instituídos no plano, visando à solução de um problema ou o atendimento de determinada necessidade ou demanda da sociedade. O Programa apresenta o código definido no PPA 2010 – 2013.<br /><br />
-
-<span class='h1'>Ação</span> - É o detalhamento do programa - a ação pode ser um Projeto (ação destinada ao investimento) ou Atividade (voltada para a manutenção de um serviço já existente) ou ainda uma operação especial (referente aos serviços da dívida pública, precatórios e outros gastos que são de toda a administração).<br /><br />
-
+<p>Ação - É o detalhamento do programa - a ação pode ser um Projeto (ação destinada ao investimento) ou Atividade (voltada para a manutenção de um serviço já existente) ou ainda uma operação especial (referente aos serviços da dívida pública, precatórios e outros gastos que são de toda a administração).</p>
 
 <h1>DEFINIÇÃO DAS FASES DE EXECUÇÃO ORÇAMENTÁRIA</h1>
 
+<ul>
 
-<spanInicial - Mostra o valor orçamentário que foi definido na LOA do ano vigente. Este valor pode ser alterado durante o exercício. O valor inicial é conhecido também como VALOR APROVADO<br /><br />
+<li>Atualizado - Nesta fase se pode enxergar se a ação ganhou ou perdeu recursos orçamentários. É nesta fase que se acompanha as alterações ocorridas em cada ação durante o exercício</li>
 
-<span class='h1'>Atualizado</span> - Nesta fase se pode enxergar se a ação ganhou ou perdeu recursos orçamentários. É nesta fase que se acompanha as alterações ocorridas em cada ação durante o exercício<br /><br />
+<li>Empenhado - Estágio que demonstra a intenção do poder público em adquirir ou realizar algum serviço. Nenhuma despesa pode ser realizada se não tiver prévio empenho. (De acordo com a Lei n°4320/64) - o empenho é a garantia de que um determinado recurso será usado somente para determinada ação. Nenhuma despesa pública poderá ser realizada sem prévio empenho.</li>
 
-<span class='h1'>Empenhado</span> - Estágio que demonstra a intenção do poder público em adquirir ou realizar algum serviço. Nenhuma despesa pode ser realizada se não tiver prévio empenho. (De acordo com a Lei n°4320/64) - o empenho é a garantia de que um determinado recurso será usado somente para determinada ação. Nenhuma despesa pública poderá ser realizada sem prévio empenho.<br /><br />
+<li>Liquidado - Neste estágio da execução sabe-se que a prefeitura já atestou que o serviço foi realizado ou que a mercadoria já foi recebida. Aqui dizemos que o compromisso de realizar uma ação foi cumprido. (Conforme o art. 62/63 Lei 4.320/64) – É neste momento que o poder executivo assume a responsabilidade pelo serviço prestado ou pela parcela da obra realizada. A liquidação de empenho só acontece após um funcionário do poder executivo receber a nota fiscal e atestar que o serviço foi realizado de forma adequada.</li>
 
-<span class='h1'>Liquidado</span> - Neste estágio da execução sabe-se que a prefeitura já atestou que o serviço foi realizado ou que a mercadoria já foi recebida. Aqui dizemos que o compromisso de realizar uma ação foi cumprido. (Conforme o art. 62/63 Lei 4.320/64) – É neste momento que o poder executivo assume a responsabilidade pelo serviço prestado ou pela parcela da obra realizada. A liquidação de empenho só acontece após um funcionário do poder executivo receber a nota fiscal e atestar que o serviço foi realizado de forma adequada.<br /><br />
+<li>PAGAMENTO, último estágio da execução orçamentária onde o recurso financeiro é depositado na conta do prestador de serviço e/ou obra para a prefeitura. (Artigos 64/65 Lei 4.320/64) – é a efetivação da liquidação. O pagamento é realizado após o setor contábil da prefeitura processar todas as notas fiscais e realizar seu cronograma de pagamento.</li>
 
-<span class='h1'>PAGAMENTO</span>, último estágio da execução orçamentária onde o recurso financeiro é depositado na conta do prestador de serviço e/ou obra para a prefeitura. (Artigos 64/65 Lei 4.320/64) – é a efetivação da liquidação. O pagamento é realizado após o setor contábil da prefeitura processar todas as notas fiscais e realizar seu cronograma de pagamento.<br /><br />
+<li>Meta física LDO - significa que a forma de medida de cada ação está inserida na Lei de Diretrizes Orçamentárias - LDO, é esta Lei que vincula as prioridades do PPA que serão expostas na LOA do ano seguinte.</li>
 
-<span class='h1'>Meta física LDO</span> - significa que a forma de medida de cada ação está inserida na Lei de Diretrizes Orçamentárias - LDO, é esta Lei que vincula as prioridades do PPA que serão expostas na LOA do ano seguinte.<br /><br />
+</ul>
 
-<h1>APRESENTAÇÃO DA REDE NOSSA SÃO PAULO</h1>
-
-A <a href="http://www.nossasaopaulo.org.br" target="_blank">Rede Nossa São Paulo</a> tem como missão mobilizar diversos segmentos da sociedade para, em parceria com instituições públicas e privadas, construir e se comprometer com uma agenda e um conjunto de metas, e articular ações visando a uma cidade de São Paulo justa e sustentável. Apartidária e inter-religiosa é apoiada por cerca de 700 organizações e milhares de cidadãos interessados em participar do processo de construção de uma São Paulo com melhor qualidade de vida. Para isso, seleciona e organiza os principais indicadores de qualidade de vida para a região de cada subprefeitura e distrito. Mantém um banco de dados sobre iniciativas exemplares de sustentabilidade urbana. E realiza ações e campanhas visando à revalorização do espaço público, à melhoria da autoestima e ao sentimento de pertencimento à cidade.<br /><br />
-A Rede Nossa São Paulo conta com a participação de Grupos de Trabalho temáticos. Os GTs são constituídos por representantes de entidades e cidadãos e cumprem uma agenda decidida coletivamente no Movimento. Estes grupos têm autonomia para planejar as ações sob a perspectiva de cada área temática.<br /><br />
-Em parceria com o Instituto Ethos e a Rede Social Brasileira por Cidades Justas e Democráticas, a Rede Nossa São Paulo é realizadora do Programa Cidades Sustentáveis (www.cidadessustentaveis.org.br) O Programa é apartidário e tem o objetivo de sensibilizar, mobilizar e oferecer ferramentas para que as cidades brasileiras se desenvolvam de forma econômica, social e ambientalmente sustentável. Para enfrentar esse grande desafio, envolve cidadãos, organizações sociais, empresas e governos. Para isso, oferece às cidades uma agenda completa de sustentabilidade urbana, um conjunto de indicadores associados a esta agenda, enriquecida por casos exemplares nacionais e internacionais como referências a serem perseguidas pelos gestores públicos municipais.<br /><br />
-
-Outro parceiro deste projeto é o <a href="http://www.w3c.br/" target="_blank">escritório brasileiro do W3C</a>, que é um consórcio internacional no qual organizações filiadas, uma equipe em tempo integral e o público trabalham juntos para desenvolver padrões para a Web. Liderado pelo inventor da web, Tim Berners-Lee, o W3C tem como missão conduzir a Web a todo seu potencial, desenvolvendo protocolos e diretrizes que garantam seu crescimento a longo prazo. O W3C Brasil entra nesse projeto, por meio do LabWeb, para garantir a sustentabilidade de iniciativas que utilizem dados abertos e gerem benefícios aos cidadãos e à administração pública, e assegura que estas iniciativas tenham todo o suporte tecnológico para continuar oferecendo interfaces entre os dados abertos e os usuários. <br /><br />
-
-<h1>Fontes de dados</h1>
+<h2>Fontes de dados<h2>
 
 <ul>
-<li><a target="_blank" href="http://www.portaldatransparencia.gov.br/">http://www.portaldatransparencia.gov.br/</a>
-<li><a target="_blank" href="http://www.fazenda.sp.gov.br/download/default.shtm">http://www.fazenda.sp.gov.br/download/default.shtm</a>
-<li><a target="_blank" href="http://sempla.prefeitura.sp.gov.br/orc_homenew.php">http://sempla.prefeitura.sp.gov.br/orc_homenew.php</a>
-<li><a target="_blank" href="http://dados.tce.rs.gov.br/dados_siapc.html#empenhos">http://dados.tce.rs.gov.br/dados_siapc.html#empenhos</a>
+<li>http://www.portaldatransparencia.gov.br/</li>
+<li>http://www.fazenda.sp.gov.br/download/default.shtm</li>
+<li>http://sempla.prefeitura.sp.gov.br/orc_homenew.php</li>
+<li>http://dados.tce.rs.gov.br/dados_siapc.html#empenhos</li>
 </ul>
 
 </div>
+

@@ -150,7 +150,7 @@ _gaq.push(['_trackPageview']);
 
 			<div class="row">
 				<div class="span14">
-					<img src="[% c.uri_for('/static/images/logo-pofomd.png') %]" border="0" class="pofomd" /> <img src="[% c.uri_for('/static/images/logo-rnsp.png') %]" border="0" class='rnsp' />
+					<img src="[% c.uri_for('/static/images/logo-pofomd-novo.jpg') %]" border="0" class="pofomd" /> <img src="[% c.uri_for('/static/images/logo-rnsp.png') %]" border="0" class='rnsp' />
 				</div>
 
 				<div class="span2">
